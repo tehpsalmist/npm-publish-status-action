@@ -27,7 +27,7 @@
     "@types/node": "^18.11.0",
     "@vercel/ncc": "^0.31.1",
     "js-yaml": "^4.1.0",
-    "typescript": "^4"
+    "typescript": "^5"
   },
   "prettier": {
     "semi": false,
