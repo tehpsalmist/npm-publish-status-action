@@ -1,6 +1,9 @@
-name: "NPM Published Version Check"
-description: "Checks the latest version of your npm package - great for conditional deployments in github actions"
-author: "tehpsalmist (bstewardcodes@gmail.com)"
+name: 'NPM Published Version Check'
+description: 'Checks the latest version of your npm package - great for conditional deployments in github actions'
+author: 'tehpsalmist (bstewardcodes@gmail.com)'
 runs:
-  using: "node16"
-  main: "dist/index.js"
+  using: 'node16'
+  main: 'dist/index.js'
+outputs:
+  exists:
+    description: 'whether or not your package has been published at the current version or not. Possible values are 1 and 0'
