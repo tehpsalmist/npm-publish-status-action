@@ -7,3 +7,6 @@ runs:
 outputs:
   exists:
     description: 'whether or not your package has been published at the current version or not. Possible values are 1 and 0'
+branding:
+  icon: 'package'
+  color: 'green'
