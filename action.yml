@@ -4,7 +4,7 @@ author: 'tehpsalmist (bstewardcodes@gmail.com)'
 runs:
   using: 'node16'
   main: 'dist/index.js'
-input:
+inputs:
   registry-url:
     description: 'Origin of the package registry, e.g. GitHub Packages "https://npm.pkg.github.com". Defaults to npmjs.'
 outputs:
