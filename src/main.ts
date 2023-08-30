@@ -35,8 +35,9 @@ function getPackageJSON(): { name: string; version: string } {
 }
 
 async function packageVersionExists(name: string, version: string) {
+  const registryUrl: string = core.getInput('registry-url') || 'https://registry.npmjs.org';
   const res = await fetch(
-    `https://registry.npmjs.org/${name}/${version}`
+    `${registryUrl}/${name}/${version}`
   ).catch((err) =>
     err instanceof Error ? err : new Error(JSON.stringify(err))
   )
