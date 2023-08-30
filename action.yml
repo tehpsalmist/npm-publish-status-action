@@ -4,9 +4,12 @@ author: 'tehpsalmist (bstewardcodes@gmail.com)'
 runs:
   using: 'node16'
   main: 'dist/index.js'
+input:
+  registry-url:
+    description: 'Origin of the package registry, e.g. GitHub Packages "https://npm.pkg.github.com". Defaults to npmjs.'
 outputs:
   exists:
-    description: 'whether or not your package has been published at the current version or not. Possible values are 1 and 0'
+    description: 'Whether or not your package has been published at the current version. Possible values are 1 (published) and 0 (not published).'
 branding:
   icon: 'package'
   color: 'green'
