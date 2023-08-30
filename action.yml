@@ -6,7 +6,7 @@ runs:
   main: 'dist/index.js'
 inputs:
   registry-url:
-    description: 'Origin of the package registry, e.g. GitHub Packages "https://npm.pkg.github.com". Defaults to npmjs.'
+    description: 'Origin of the package registry, e.g. GitHub Packages ("https://npm.pkg.github.com"). Defaults to npmjs ("https://registry.npmjs.org").'
 outputs:
   exists:
     description: 'Whether or not your package has been published at the current version. Possible values are 1 (published) and 0 (not published).'
